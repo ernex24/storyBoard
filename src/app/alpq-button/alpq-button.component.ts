@@ -15,12 +15,11 @@ export class AlpqButtonComponent implements OnInit {
   @Input() icon: boolean;
   @Input() iconType: string;
   @Input() loading: string;
-
+  
   @Output() click = new EventEmitter();
 
   @ViewChild('container', {static: true}) container:ElementRef;
   
-
   public get classes(): string[] {
     const mode = [`alpq-btn-${this.type}`, `alpq-btn-${this.size}`]
     console.log(mode)
@@ -34,5 +33,4 @@ export class AlpqButtonComponent implements OnInit {
     this.icon ? this.container.nativeElement.innerHTML = `<span class="${this.iconType}"></span>${this.text}` : this.text
     this.loading ? this.container.nativeElement.innerHTML = `<span class="gg-loadbar-alt"></span>` : this.text
   }
-
 }
