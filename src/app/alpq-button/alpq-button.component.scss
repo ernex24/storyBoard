@@ -1,0 +1,148 @@
+@import url("https://css.gg/css");
+
+.alpq-btn-primary {
+  font-family: "VistaSansBook";
+  background-color: #052f43;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 200ms;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover {
+    background-color: #007db3;
+    transition: all 200ms;
+  }
+  &:active {
+    background-color: #052f43;
+  }
+  &:disabled {
+    background-color: #f2f4f5;
+    color: #666058;
+    cursor: default;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
+  }
+  & > span {
+    margin-right: 8px;
+    transform: scale(0.8);
+  }
+}
+
+.alpq-btn-small {
+  padding: 10px 8px;
+  height: 16px;
+  min-width: 60px;
+}
+
+.alpq-btn-medium {
+  padding: 5px 28px;
+  height: 30px;
+  min-width: 80px;
+}
+
+.alpq-btn-large {
+  padding: 10px 24px;
+  min-height: 36px;
+  min-width: 120px;
+}
+
+.alpq-btn-secondary {
+  font-family: "VistaSansBook";
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #aabdc6;
+  color: #052f43;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 200ms;
+  &:hover {
+    background-color: #052f43;
+    color: #ffffff;
+    transition: all 200ms;
+    border: 1px solid #052f43;
+  }
+  &:active {
+    background-color: #ffffff;
+    color: #052f43;
+  }
+  &:disabled {
+    background-color: #f2f4f5;
+    color: #666058;
+    cursor: default;
+    border: 0;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid #007db3;
+    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
+  }
+  & > span {
+    margin-right: 8px;
+    transform: scale(0.8);
+  }
+}
+
+.alpq-btn-circle{
+    font-family: 'VistaSansBook';
+    background-color: #052F43;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  	width: 40px;
+    -webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	transition: all 200ms;
+    &:hover {
+        background-color: #007DB3;
+        transition: all 200ms;
+    }
+    &:active {
+     	background-color: #052F43;
+    }
+    &:disabled {
+      background-color: #F2F4F5;
+      color:#666058;
+      cursor:default;
+    }
+    &:focus{
+  	  outline: none;
+      box-shadow: 0 0 4px 2px rgba(0,125,179,0.7);
+    }
+  & > i {
+    transform: scale(1);
+	}
+}
