@@ -9,19 +9,31 @@ import { Button } from 'protractor';
 })
 export class AlpqButtonComponent implements OnInit {
 
-  @Input() type: string;
-  @Input() size: string;
-  @Input() text: string;
-  @Input() icon: boolean;
-  @Input() iconType: string;
-  @Input() loading: string;
+  @Input() 
+  type:  'primary' | 'secondary' | 'warning' | 'danger' | 'success' ;
+
+  @Input() 
+  size: 'small' | 'medium' | 'large' ; 
+
+  @Input() 
+  label = 'Button';
+
+  @Input() 
+  icon = false;
+
+  @Input() 
+  iconType = 'gg-software-download';
+
+  @Input() 
+  loading = false;
   
-  @Output() click = new EventEmitter();
+  @Output() 
+  onClick = new EventEmitter<Event>();
 
   @ViewChild('container', {static: true}) container:ElementRef;
   
-  public get classes(): string[] {
-    const mode = [`alpq-btn-${this.type}`, `alpq-btn-${this.size}`]
+  public get classes(): string {
+    const mode = ` alpq-btn-${this.type} ` + ` alpq-btn-${this.size} `
     console.log(mode)
     return mode;
   }
@@ -30,7 +42,7 @@ export class AlpqButtonComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.container)
-    this.icon ? this.container.nativeElement.innerHTML = `<span class="${this.iconType}"></span>${this.text}` : this.text
-    this.loading ? this.container.nativeElement.innerHTML = `<span class="gg-loadbar-alt"></span>` : this.text
+    this.icon ? this.container.nativeElement.innerHTML = `<span class="${this.iconType}"></span>${this.label}` : this.label
+    this.loading ? this.container.nativeElement.innerHTML = `<span class="gg-loadbar-alt"></span>` : this.label
   }
 }

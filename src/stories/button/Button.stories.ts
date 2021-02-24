@@ -4,7 +4,10 @@ import Button from './button.component';
 
 export default {
   title: 'Example/Button',
-  component: Button
+  component: Button,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 } as Meta;
 
 const Template: Story<Button> = (args: Button) => ({
@@ -14,12 +17,13 @@ const Template: Story<Button> = (args: Button) => ({
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Button primary',
+  primary: true,
+  label: 'Button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button secondary',
+  label: 'Button',
 };
 
 export const Large = Template.bind({});

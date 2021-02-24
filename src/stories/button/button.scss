@@ -1,263 +1,30 @@
-.alpq-btn-primary {
-  font-family: "VistaSansBook";
-  background-color: #052f43;
-  border-radius: 4px;
-  border: none;
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
   color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 28px;
-  min-height: 40px;
-  min-width: 64px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #007db3;
-    transition: all 200ms;
-  }
-  &:active {
-    background-color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
+  background-color: #1ea7fd;
 }
-
-.alpq-btn-primary-small {
-  font-family: "VistaSansBook";
-  background-color: #052f43;
-  border-radius: 4px;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 8px;
-  min-height: 28px;
-  min-width: 80px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #007db3;
-    transition: all 200ms;
-  }
-  &:active {
-    background-color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-
-.alpq-btn-primary-large {
-  font-family: "VistaSansBook";
-  background-color: #052f43;
-  border-radius: 4px;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 36px;
-  min-height: 48px;
-  min-width: 120px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #007db3;
-    transition: all 200ms;
-  }
-  &:active {
-    background-color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
 }
-
-.alpq-btn-secondary {
-  font-family: "VistaSansBook";
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 1px solid #aabdc6;
-  color: #052f43;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 8px;
-  min-height: 28px;
-  min-width: 80px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #052f43;
-    color: #ffffff;
-    transition: all 200ms;
-    border: 1px solid #052f43;
-  }
-  &:active {
-    background-color: #ffffff;
-    color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-    border: 0;
-  }
-  &:focus {
-    outline: none;
-    border: 1px solid #007db3;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
 }
-
-.alpq-btn-secondary-small {
-  font-family: "VistaSansBook";
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 1px solid #aabdc6;
-  color: #052f43;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 28px;
-  min-height: 40px;
-  min-width: 64px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #052f43;
-    color: #ffffff;
-    transition: all 200ms;
-    border: 1px solid #052f43;
-  }
-  &:active {
-    background-color: #ffffff;
-    color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-    border: 0;
-  }
-  &:focus {
-    outline: none;
-    border: 1px solid #007db3;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
-}
-
-.alpq-btn-secondary-large {
-  font-family: "VistaSansBook";
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 1px solid #aabdc6;
-  color: #052f43;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 36px;
-  min-height: 48px;
-  min-width: 120px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 200ms;
-  &:hover {
-    background-color: #052f43;
-    color: #ffffff;
-    transition: all 200ms;
-    border: 1px solid #052f43;
-  }
-  &:active {
-    background-color: #ffffff;
-    color: #052f43;
-  }
-  &:disabled {
-    background-color: #f2f4f5;
-    color: #666058;
-    cursor: default;
-    border: 0;
-  }
-  &:focus {
-    outline: none;
-    border: 1px solid #007db3;
-    box-shadow: 0 0 4px 2px rgba(0, 125, 179, 0.7);
-  }
-  & > i {
-    margin-right: 8px;
-    transform: scale(0.8);
-  }
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
 }
